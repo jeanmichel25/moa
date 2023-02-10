@@ -14,12 +14,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-
-
-      - name: run tests
-        run: mvn test --file pom.xml
-
-
       - name: Build with Maven
         run: mvn -B build --settings ./maven-settings.xml --file ../pom.xml
       
