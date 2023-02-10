@@ -15,7 +15,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn compile --settings ./maven-settings.xml --file ./pom.xml
+        run: mvn -B package --settings ./maven-settings.xml --file ./pom.xml
       
       - name: run tests
         run: mvn test -Dtest=moa.classifiers.bayes.NaiveBayesMultinominalTest -DfailIfNoTests=false --settings ./maven-settings.xml --file ./pom.xml
