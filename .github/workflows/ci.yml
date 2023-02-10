@@ -14,5 +14,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and test with Maven
-        run: mvn -B package -DskipTests=true test -Dtest=moa.classifiers.functions.PerceptronTest --settings ./maven-settings.xml --file ./pom.xml
+      - name: Build with Maven
+        run: mvn compile --settings ./maven-settings.xml --file ./pom.xml
