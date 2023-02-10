@@ -19,6 +19,6 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      uses: docker://maven:3.6.3-jdk-8
+      uses: docker://maven:3.7.0-jdk-11
       with:
         args: mvn --batch-mode --update-snapshots package
