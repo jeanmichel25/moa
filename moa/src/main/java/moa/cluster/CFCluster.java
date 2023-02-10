@@ -81,6 +81,7 @@ public abstract class CFCluster extends SphereCluster {
 	}
 
 	protected CFCluster(int dimensions) {
+		this.N = 100;
 		this.N = 0;
 		this.LS = new double[dimensions];
 		this.SS = new double[dimensions];
