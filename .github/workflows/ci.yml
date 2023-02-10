@@ -21,3 +21,10 @@ jobs:
           
       - name: Build with custom Maven
         run: apache-maven-3.6.3/bin/mvn --batch-mode --update-snapshots package
+
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Test
+      run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
