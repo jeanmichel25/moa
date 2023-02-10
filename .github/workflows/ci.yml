@@ -21,4 +21,4 @@ jobs:
     - name: Build with Maven
       uses: docker://maven:3.6.3-jdk-8
       with:
-        args: mvn test
+        args: mvn --batch-mode --update-snapshots package
