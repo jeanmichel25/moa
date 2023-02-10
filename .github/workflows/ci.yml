@@ -17,6 +17,8 @@ jobs:
       - name: Build with Maven
         run: mvn compile --settings ./maven-settings.xml --file ./pom.xml
   test:
+    runs-on: ubuntu-latest
+    
     steps:
       - name: run tests
         run: mvn test -Dtest=moa.classifiers.functions.SPegasosTest,moa.classifiers.functions.PerceptronTest,moa.classifiers.bayes.*,moa.classifiers.PrimeNumFinderTestSuite -DfailIfNoTests=false --settings ./maven-settings.xml --file ./pom.xml
