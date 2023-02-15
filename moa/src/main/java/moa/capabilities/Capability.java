@@ -58,3 +58,5 @@ public enum Capability {
     return Enum.valueOf(Capability.class, "VIEW_" + shortName.toUpperCase());
   }
 }
+
+// a change
