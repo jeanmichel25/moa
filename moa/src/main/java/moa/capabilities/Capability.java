@@ -59,4 +59,4 @@ public enum Capability {
   }
 }
 
-// a random change
+// a random change made to the file
